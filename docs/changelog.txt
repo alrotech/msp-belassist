@@ -1,5 +1,9 @@
 Changelog for mspAssistBelarus.
 
+1.0.1
+==============
+- Fixed getOption params for language and currency
+
 1.0.0 beta
 ==============
 - Initial release.
