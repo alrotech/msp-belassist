@@ -24,11 +24,11 @@ class AssistBelarus extends msPaymentHandler implements msPaymentInterface {
                 'payment_url' => $paymentUrl,
                 'checkout_url' => $this->modx->getOption('ms2_payment_assistbelarus_checkout_url'),
                 'gate_url' => $this->modx->getOption('ms2_payment_assistbelarus_gate_url'),
-                'language' => $this->modx->getOption('ms2_payment_assistbelarus_language', 'RU', true),
-                'currency' => $this->modx->getOption('ms2_payment_assistbelarus_currency', 'USD', true),
-                'developer_mode' => $this->modx->getOption('ms2_payment_assistbelarus_developer_mode', 0, true),
-                'success_payment' => $this->modx->getOption('ms2_payment_assistbelarus_success_payment_id', 2, true),
-                'cancel_payment' => $this->modx->getOption('ms2_payment_assistbelarus_cancel_payment_id', 4, true),
+                'language' => $this->modx->getOption('ms2_payment_assistbelarus_language', null, 'RU', true),
+                'currency' => $this->modx->getOption('ms2_payment_assistbelarus_currency', null, 'USD', true),
+                'developer_mode' => $this->modx->getOption('ms2_payment_assistbelarus_developer_mode', null, 0, true),
+                'success_payment' => $this->modx->getOption('ms2_payment_assistbelarus_success_payment_id', null, 2, true),
+                'cancel_payment' => $this->modx->getOption('ms2_payment_assistbelarus_cancel_payment_id', null, 4, true),
                 'json_response' => false
             ),
             $config
